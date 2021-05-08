@@ -4,7 +4,7 @@
   "slug": "u6143_ssd1306",
   "description": "Add-on that shows on the OLED display the IP, CPU and memory usage, and temperature",
   "arch": ["armv7"],
-  "url": "https://github.com/darkgrue/U6143_ssd1306",
+  "url": "https://github.com/darkgrue/addon-u6143_ssd1306",
   "startup": "system",
   "host_network": true,
   "devices": ["/dev/i2c-1"],
