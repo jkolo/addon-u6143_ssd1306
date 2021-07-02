@@ -2,7 +2,7 @@
   "name": "Pi Rack (U6143) OLED Display",
   "version": "dev",
   "slug": "u6143_ssd1306",
-  "description": "Add-on that shows on the OLED display the IP, CPU and memory usage, and temperature",
+  "description": "This is a add-on wrapper for the UCTRONICS U6143_ssd1306 Pi Rack OLED display driver",
   "arch": ["armv7"],
   "url": "https://github.com/darkgrue/addon-u6143_ssd1306",
   "startup": "system",
