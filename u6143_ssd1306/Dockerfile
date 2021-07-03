@@ -1,4 +1,3 @@
-#ARG BUILD_FROM=ghcr.io/hassio-addons/base/armv7:9.2.0
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
@@ -6,4 +5,17 @@ FROM ${BUILD_FROM}
 COPY rootfs /
 
 # Setup base
-RUN apk add --no-cache libc6-compat procps
+RUN apk add --no-cache \
+    procps \
+ && apk add --no-cache --virtual .build-dependencies \
+    build-base \
+    git \
+    linux-headers
+
+RUN git clone https://github.com/darkgrue/U6143_ssd1306.git \
+ && cd /U6143_ssd1306/C \
+ && make \
+ && cp display /usr/local/bin/ \
+ && apk del .build-dependencies \
+ && cd / \
+ && rm -rf /U6143_ssd1306
