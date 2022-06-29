@@ -1,0 +1,13 @@
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base:3.15"
+  amd64: "ghcr.io/home-assistant/amd64-base:3.15"
+  armhf: "ghcr.io/home-assistant/armhf-base:3.15"
+  armv7: "ghcr.io/home-assistant/armv7-base:3.15"
+  i386: "ghcr.io/home-assistant/i386-base:3.15"
+labels:
+  org.opencontainers.image.title: "Pi Rack (U6143) OLED Display"
+  org.opencontainers.image.description: "This is a add-on wrapper for the UCTRONICS U6143_ssd1306 Pi Rack OLED display driver"
+  org.opencontainers.image.source: "https://github.com/darkgrue/addon-u6143_ssd1306"
+  org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  TEMPIO_VERSION: "2021.09.0"
