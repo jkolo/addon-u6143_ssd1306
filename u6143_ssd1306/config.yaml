@@ -8,6 +8,7 @@ arch:
   - armv7
 startup: system
 host_network: true
+apparmor: false
 devices:
   - /dev/i2c-1
 init: false
